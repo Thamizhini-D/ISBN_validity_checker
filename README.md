@@ -16,7 +16,7 @@ What this checker does is:
 - If its divisible, its evaluated as a valid ISBN number. Otherwise, the right "10th digit" is suggested in order to make it a valid ISBN number.
 
 Note that the code consists of hard-coded in char arrays to show how the output looks like.
-Once acquainted with the output, user may try to input your own ISBN number to check its validity. That section is commented out. User may remove the comment slashes to begin checking the validity of their own ISBN number.
+Once acquainted with the output, user may try to input their own ISBN number to check its validity. That section is commented out. User may remove the comment slashes to begin checking the validity of their own ISBN number.
 
 Inputs are limited to 13 characters, which means "-" should be included in the inputs given by user along with the digits in the ISBN number.
 
