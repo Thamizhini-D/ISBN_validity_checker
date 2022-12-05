@@ -124,17 +124,15 @@ public class ISBN_s28281 {
                 //if divisibility check passes, then the appropriate last digit is printed. In case of the exception 10, X is printed.
                 for (int m = 0; m <= 10; m++) {
                     if ((rest + m) % 11 == 0) {
+                        printArr(isbn);
                         if (m == 10) {
-                            printArr(isbn);
                             System.out.print(" : ERROR. Last digit should be X");
-                            System.out.println();
-
                         } else {
-                            printArr(isbn);
                             System.out.print(" : ERROR. Last digit should be " + m);
-                            System.out.println();
-
                         }
+                           
+                        System.out.println();
+
                     }
                 }
 
