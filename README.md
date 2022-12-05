@@ -10,7 +10,7 @@ Each of this digit is multiplied with its corresponding weight. Next, all of the
 The 10th digit is assigned in a way that sum of all these 10 digits is divisible by 11.
 
 What this checker does is:
-- check is invalid characters are given
+- check if invalid characters are given
 - check if exactly 10 digits have been given. Informs if less or more digits have been given.
 - If exactly 10 digits have been given, it assign and multiplies each of those digits with its corresponding weighs. All these products are summed up and checked its divisibility by 11. 
 - If its divisible, its evaluated as a valid ISBN number. Otherwise, the right "10th digit" is suggested in order to make it a valid ISBN number.
