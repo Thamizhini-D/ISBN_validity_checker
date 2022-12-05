@@ -71,25 +71,14 @@ public class ISBN_s28281 {
             even if the value it encountered would be a "-". Remember that j should decrease only after encountering a number, a VALID number!
             not a dash or invalid character
 
-            3.note how summing up and j-- is done in a separate BLOCK.
-            this separate BLOCK is built so that the count statement is executed, which basically counts the
-            number of valid numbers (which has to be 10) for a correct ISBN.
-
-            It is assumed that int_equiv, having gone through validity checks
-            and multiplied with its weight j means it's a valid number.
-
-            Because, this block will be executed ONLY if a valid number is outputted from the previous code, so it makes sense
-            to count the number of times this BLOCK is executed to know how many VALID characters are in the array.
-
-            Knowing this count will help assess whether too few/many valid characters are given in an ISBN
-
+           
              */
-            {
+            
                 summing += j * int_equiv;
                 j--;
                 count++;
 
-            }
+            
 
         }
 
@@ -127,10 +116,11 @@ public class ISBN_s28281 {
                 if ((isbn[isbn.length - 1] == 'X')) {
                     rest = summing - 10;
                 } else {
+                    //note that converting to int from char is necessary before subtracting last value from total sum
                     rest = summing - (isbn[isbn.length - 1] - '0');
                 }
 
-                //check digit's range is 0-10. So, a new loop is created which adds each value to the rest variable and checks divisibility by 11
+                //check digit's range is 0-10. So, a new loop is created which adds values in this range to the rest variable and checks divisibility by 11
                 //if divisibility check passes, then the appropriate last digit is printed. In case of the exception 10, X is printed.
                 for (int m = 0; m <= 10; m++) {
                     if ((rest + m) % 11 == 0) {
