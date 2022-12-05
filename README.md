@@ -3,7 +3,7 @@
 Checks if the given ISBN number is valid or not.
 
 An ISBN consists of 10 digits separated by "-" each 3 digits.
-First 9 digits can assume any value between the range 0-10. 10 is represented as "X"
+First 9 digits can assume any value between the range 0-10. 10 is represented as "X".
 Each of this digit is assigned a "weight" which begins from "10" and decreases until it reaches "1" (left to right).
 
 Each of this digit is multiplied with its corresponding weight. Next, all of these products are summed up.
